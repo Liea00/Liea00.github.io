@@ -1,0 +1,155 @@
+/* general */
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	color: #222222;
+	font-size: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.mainContent h2 {
+	/*font-family: 'Josefin Sans', sans-serif;
+	font-size: 200%; */
+	/*font-family: 'Megrim', cursive;
+	font-size: 200%; */
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 200%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	
+}
+
+a:hover, a:active {
+	
+}
+
+.body {
+	margin: 0 auto;
+	width: 60%;
+	clear: both;
+}
+
+/* header & navigation */
+
+.mainHeader img {
+	width: 100%;
+	height: auto;
+	margin: 2% 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mainHeader nav {
+	margin-left: auto;
+	margin-right: auto; /* horen deze hier of in nav ul? */
+}
+
+.mainHeader nav ul {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 150%;
+	text-align: center;
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #222222;
+	display: inline-block;
+	padding: 10px 35px;
+	margin: 0 auto;
+	/* come back to assign height ? */
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	text-shadow: none; /* this whole block might be unnecessary since I don't want click effects */
+}
+
+/* body */
+
+.mainContent {
+	border-radius: 5px; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; /* unnecessary? */
+	overflow: hidden;
+}
+
+/* gallery */
+
+.content {
+	float: left;
+}
+
+.galleryContainer img {
+	width: 100%;
+	height: auto;
+	margin: 0 0.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbGallery ul {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.thumbGallery li {
+	display: inline;	
+}
+
+.thumbGallery img {
+	display: inline-block;
+	width: 33.33%;
+	height: auto;
+}
+
+/* about */
+
+#aboutText {
+    display:inline-block;
+    width:66%;
+    padding-right:5%;
+    height:80%;
+    vertical-align:bottom;
+}
+
+#aboutImg {
+	display:inline-block;
+    width:27%;
+    height: auto;
+    vertical-align:bottom;
+}
+
+img {
+    width: 100%
+}
+
+/* connect */
+
+.connect {
+	
+}

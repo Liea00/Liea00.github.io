@@ -1,0 +1,10 @@
+/* css for imagelightbox */
+
+#imagelightbox
+{
+    position: relative;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}
