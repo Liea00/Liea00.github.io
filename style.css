@@ -110,6 +110,14 @@ a:hover, a:active {
 	margin-right: auto;
 }
 
+.galleryContainer h3 {
+	text-align: right;
+}
+
+.gallery {
+	padding-bottom: 10%;
+}
+
 .thumbGallery ul {
 	font-size: 0;
 	margin: 0;

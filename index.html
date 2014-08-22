@@ -64,11 +64,13 @@
 					<div class="gallery">
 						<h3>Commercial</h3>
 						<content>
-							<img src="img/gallery3_main.png" />
+							<a href="img/gallery3_main.png"><img src="img/gallery3_main_th.png" /></a>
 							<div class="thumbGallery">
-								<img src="img/gallery3_1.png" />
-								<img src="img/gallery3_2.png" />
-								<img src="img/gallery3_3.png" />
+								<ul>
+									<li><a href="img/gallery3_1.png"><img src="img/gallery3_1_th.png" /></a></li>
+									<li><a href="img/gallery3_2.png"><img src="img/gallery3_2_th.png" /></a></li>
+									<li><a href="img/gallery3_3.png"><img src="img/gallery3_3_th.png" /></a></li>
+								</ul>
 							</div>
 						</content>
 					</div>
@@ -127,36 +129,7 @@
 	        $( 'a' ).imageLightbox();
 	    });
 	</script>
-	
-	<!-- werkende scripts voor image vergroten
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="txt/css" charset="utf-8"></script>
-	<script src="imagelightbox.js" type="txt/css" charset="utf-8"></script>
-		
-	<script>
-	    $( function()
-	    {
-	        $( 'a' ).imageLightbox();
-	    });
-	</script>
-	
-	$( selector ).imageLightbox(
-	{
-	    selector:       'id="imagelightbox"',   // string;
-	    allowedTypes:   'png|jpg|jpeg|gif',     // string;
-	    animationSpeed: 250,                    // integer;
-	    preloadNext:    true,                   // bool;            silently preload the next image
-	    enableKeyboard: true,                   // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
-	    quitOnEnd:      false,                  // bool;            quit after viewing the last image
-	    quitOnImgClick: false,                  // bool;            quit when the viewed image is clicked
-	    quitOnDocClick: true,                   // bool;            quit when anything but the viewed image is clicked
-	    onStart:        false,                  // function/bool;   calls function when the lightbox starts
-	    onEnd:          false,                  // function/bool;   calls function when the lightbox quits
-	    onLoadStart:    false,                  // function/bool;   calls function when the image load begins
-	    onLoadEnd:      false                   // function/bool;   calls function when the image finishes loading
-	});
-	
-	end comment -->
+
 		
 </body>
 </html>
