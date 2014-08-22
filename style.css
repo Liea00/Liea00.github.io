@@ -158,6 +158,27 @@ img {
 
 /* connect */
 
-.connect {
+.links {
+	width: 30%;
+}
+.connect content {
+	float: left;
+}
+
+.connect ul {
+	width: 100%;
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.connect li {
+	display: inline;
+}
+
+.connect img {
+	display: inline-block;
+	width: 32%;
 	
 }
