@@ -59,7 +59,7 @@
 						 	animationSpeed:	250,
 						 	preloadNext:	true,
 						 	enableKeyboard:	true,
-						 	quitOnEnd:		false,
+						 	quitOnEnd:		true,
 						 	quitOnImgClick: false,
 						 	quitOnDocClick: true,
 						 	onStart:		false,

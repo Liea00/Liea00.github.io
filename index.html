@@ -30,10 +30,11 @@
 			<div class="galleries">
 				<header>
 					<h2 id="works">Works</h2>
+					<hr>
 				</header>
 				
 				<div class="galleryContainer">
-					<div class="gallery">
+					<div class="gallery gallery-1">
 						<h3>Illustration</h3>
 						<content>
 							<a href="img/gallery1_main.png"><img src="img/gallery1_main_th.png" /></a>
@@ -47,7 +48,7 @@
 						</content>
 					</div>
 				
-					<div class="gallery">
+					<div class="gallery gallery-2">
 						<h3>Character Design</h3>
 						<content>
 							<a href="img/gallery2_main.png"><img src="img/gallery2_main_th.png" /></a>
@@ -61,7 +62,7 @@
 						</content>
 					</div>
 				
-					<div class="gallery">
+					<div class="gallery gallery-3">
 						<h3>Commercial / Identity</h3>
 						<content>
 							<a href="img/gallery3_main.png"><img src="img/gallery3_main_th.png" /></a>
@@ -80,6 +81,7 @@
 			<div class="about">
 				<header>
 					<h2 id="about">About</h2>
+					<hr>
 				</header>
 				
 				<content>
@@ -92,14 +94,15 @@
 						<img src="img/about_photo.jpg" />
 					</div>
 				</content>
-			</article>
+			</div>
 			
-			<article class="connect">
+			<div class="connect">
 				<header>
 					<h2 id="connect">Connect</h2>
+					<hr>
 				</header>
 				
-				<content>
+			<content>
 					<div class="links">
 						<content>
 							<ul>
@@ -115,11 +118,22 @@
 						</content>
 					</div>
 					
-					<div class="messageform">
-						<!--customizable js plug-in zoeken voor msg form-->
-					</div>
+					<form class="messageForm">
+						<p class="name">
+							<input type="text" name="name" id="name" placeholder="John Doe" />
+						</p>
+						<p class="email">
+							<input type="text" name="email" id="email" placeholder="mail@example.com" />
+						</p>
+						<p class="text">
+							<input type="text" name="message" id="message" placeholder="hello" />
+						</p>
+						<p class="submit">
+							<input type="submit" value="Send" />
+						</p>
+					</form>
 				</content>
-			</div>			
+			</div>		
 		</div>
 	</div>
 	
@@ -131,8 +145,25 @@
 	<script src="imagelightbox.js"></script>
 	<script>
 	    $( function()
-	    {
-	        $( 'a' ).imageLightbox();
+		{
+			var activityIndicatorOn = function()
+					{
+						$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+					}
+					
+			var activityIndicatorOff = function()
+					{
+						$( '#imagelightbox-loading' ).remove();
+					}
+			
+			
+	        $( '.gallery-1 a' ).imageLightbox({
+				onLoadStart:	function() { activityIndicatorOn(); },
+				onLoadEnd:		function() { activityIndicatorOff(); },
+				onEnd:	 		function() { activityIndicatorOff(); }
+			});
+	        $( '.gallery-2 a' ).imageLightbox();
+	        $( '.gallery-3 a' ).imageLightbox();
 	    });
 	</script>
 
