@@ -21,10 +21,6 @@ body {
 }
 
 .mainContent h2 {
-	/*font-family: 'Josefin Sans', sans-serif;
-	font-size: 200%; */
-	/*font-family: 'Megrim', cursive;
-	font-size: 200%; */
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 200%;
 }
@@ -50,7 +46,7 @@ a:hover, a:active {
 /* header & navigation */
 
 .mainHeader img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin: 2% 0;
 	margin-left: auto;
@@ -81,11 +77,6 @@ a:hover, a:active {
 	padding: 10px 35px;
 	margin: 0 auto;
 	/* come back to assign height ? */
-}
-
-.mainHeader nav a:hover, .mainHeader nav a:active,
-.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-	text-shadow: none; /* this whole block might be unnecessary since I don't want click effects */
 }
 
 /* body */
@@ -136,12 +127,17 @@ hr {
 }
 
 .thumbGallery li {
-	display: inline;	
+	display: inline;
+	padding-right: 0.95%;
 }
 
-.thumbGallery img {
+.thumbGallery ul li:last-child {
+	padding-right: 0;
+}
+
+.thumbGallery ul li img {
 	display: inline-block;
-	width: 33.33%;
+	width: 32.7%;
 	height: auto;
 }
 
