@@ -23,6 +23,7 @@ body {
 .mainContent h2 {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 200%;
+	padding-top: 2%;
 }
 
 a {
@@ -40,6 +41,7 @@ a:hover, a:active {
 .body {
 	margin: 0 auto;
 	width: 60%;
+	max-width: 1100px;
 	clear: both;
 }
 
@@ -49,7 +51,7 @@ a:hover, a:active {
 	width: 100%;
 	max-width: 1100px;
 	height: auto;
-	margin: 2% 0;
+	margin: 0.5% 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -95,7 +97,6 @@ hr {
 	    border-top: 1px solid rgba(0, 0, 0, 0.1);
 	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
-}
 
 /* gallery */
 
@@ -105,7 +106,6 @@ hr {
 
 .galleryContainer img {
 	width: 100%;
-	max-width: 1100px;
 	height: auto;
 	margin: 0 0.5%;
 	margin-left: auto;
@@ -117,7 +117,7 @@ hr {
 }
 
 .gallery {
-	padding-bottom: 10%;
+	padding-bottom: 6%;
 }
 
 .thumbGallery ul {
@@ -144,37 +144,54 @@ hr {
 
 /* about */
 
-#aboutText {
-    display:inline-block;
-    width:66%;
-    padding-right:5%;
-    height:80%;
-    vertical-align:bottom;
+.about {
+	float: left;
 }
 
-#aboutImg {
-	display:inline-block;
-    width:27%;
-    height: auto;
-    vertical-align:bottom;
+.aboutContainer {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
 }
 
-img {
-    width: 100%
+.aboutText {
+	display: inline;
+    width: 60%;
+	height: auto;
+	margin: 0;
+	float: left;
+}
+
+.aboutImg {
+	display: inline;
+	display: block;
+	width: 30%;
+	float: right;
+	margin: 0;
+}
+
+.aboutImg img {
+	min-width: 240px
+}
+
+/* clearfix */
+
+.clearfix {
+	clear: both;
 }
 
 /* connect */
 
 .connect {
 	width: 100%;
-	display: inline;
+	display: block;
+	float: left;
 	vertical-align:bottom;
 }
 
+
 .links {
-	float: left;
 	width: 35%;
-	
 }
 
 .connect ul {
@@ -187,38 +204,88 @@ img {
 
 .connect li {
 	display: inline;
+	float: left;
+	width: 32%;
 }
 
 .connect img {
 	display: inline;
 	width: 32%;
-	
 }
 
-.messageForm {
-	width: 100%;
-	padding: 2px;
-	margin: 2px;
+.deviantart {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_da.png') center top no-repeat;
 }
 
-input {
-	border: 1px dotted #ffffff;
-	background-color: #000;
-	width: 200px;
-	padding: 1%;
-	color: #ffffff;
+.deviantart:hover {
+   background-image: url('img/logo_da_c.png');
 }
 
-.text input {
-	width: 200px;
-	height: 100px;
+.tumblr {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_tu.png') center top no-repeat;
 }
 
-.submit input {
-	width: 200px;
-	height: 20px;
-	line-height: 2px;
+.tumblr:hover {
+   background-image: url('img/logo_tu_c.png');
 }
+
+.facebook {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_fb.png') center top no-repeat;
+}
+
+.facebook:hover {
+   background-image: url('img/logo_fb_c.png');
+}
+
+.twitter {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_tw.png') center top no-repeat;
+}
+
+.twitter:hover {
+   background-image: url('img/logo_tw_c.png');
+}
+
+.society6 {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_s6.png') center top no-repeat;
+}
+
+.society6:hover {
+   background-image: url('img/logo_s6_c.png');
+}
+
+.welovefine {
+	margin-bottom: 10px;
+	width: 100px;
+	height:100px;
+	display:block;
+ 	background:transparent url('img/logo_wl.png') center top no-repeat;
+}
+
+.welovefine:hover {
+   background-image: url('img/logo_wl_c.png');
+}
+
+
 
 /* LOADER CSS */
 
