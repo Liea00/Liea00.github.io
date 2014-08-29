@@ -24,6 +24,8 @@ body {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 200%;
 	padding-top: 2%;
+	padding-bottom: 0;
+	margin-bottom: 2%;
 }
 
 a {
@@ -43,6 +45,13 @@ a:hover, a:active {
 	width: 60%;
 	max-width: 1100px;
 	clear: both;
+}
+
+h5 {
+	font-family: 'Megrim', cursive;
+	text-align: right;
+	margin-top: 5px;
+	color: #222222;
 }
 
 /* header & navigation */
@@ -96,6 +105,7 @@ hr {
 	    height: 0;
 	    border-top: 1px solid rgba(0, 0, 0, 0.1);
 	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		padding-bottom: 3%;
 	}
 
 /* gallery */
@@ -114,6 +124,7 @@ hr {
 
 .galleryContainer h3 {
 	text-align: right;
+	color: #222222;
 }
 
 .gallery {
@@ -151,36 +162,46 @@ hr {
 .aboutContainer {
 	display: block;
 	width: 100%;
-	margin: 0 auto;
+	padding: 5% 0;
 }
 
 .aboutText {
 	display: inline;
-    width: 60%;
+    width: 65%;
 	height: auto;
-	margin: 0;
 	float: left;
+}
+
+.aboutText p {
+	margin: 0;
+	padding: 0;
 }
 
 .aboutImg {
 	display: inline;
 	display: block;
-	width: 30%;
 	float: right;
 	margin: 0;
 }
 
 .aboutImg img {
-	min-width: 240px
+	min-width: 200px
 }
 
 /* clearfix */
 
-.clearfix {
-	clear: both;
-}
+
 
 /* connect */
+
+.connectContainer {
+	float: left;
+}
+
+.description {
+	display: inline;
+	padding: 0;
+}
 
 .connect {
 	width: 100%;
@@ -189,6 +210,9 @@ hr {
 	vertical-align:bottom;
 }
 
+.clearfix {
+	clear: both;
+}
 
 .links {
 	width: 35%;
@@ -206,6 +230,7 @@ hr {
 	display: inline;
 	float: left;
 	width: 32%;
+	padding: 8% 0;
 }
 
 .connect img {
@@ -286,6 +311,11 @@ hr {
 }
 
 
+/* footer */
+
+.mainFooter {
+	text-align: center;
+}
 
 /* LOADER CSS */
 
