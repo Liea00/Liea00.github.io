@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="imagelightbox.css" type="txt/css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
 			
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -19,10 +21,10 @@
 		<img id="home" src="img/header.png">
 		
 		<nav><ul>
-			<li class="active"><a href="#about">ABOUT</a></li>
 			<li><a href="#works">WORKS</a></li>
+			<li><a href="#about">ABOUT</a></li>
 			<li><a href="#connect">CONNECT</a></li>
-			<li><a href="#">SHOP</a></li>
+			<li><a href="http://society6.com/liea">SHOP</a></li>
 		</ul></nav>
 	</header>
 	
@@ -92,11 +94,12 @@
 					<div class="aboutText">
 						<p>Hello, I’m Mei-Li Nieuwland / Liea [ li:’a ], currently doing freelance illustration and concept art from a small apartment-turned-studio in Amsterdam.</p>
 						<br>
-						<p>I'm self-taught as an artist, but studied AI and anthropology (it's been a bit of a detour). Great amounts of affection go to tech, food, learning languages, gaming, and fashion, and these all fuse in my ambition to create things that are beautiful to look at in new and interesting ways. I work 100% digitally using an Intuos 4 Wacom tablet, Photoshop CS5, and Easy Paint Tool SAI.</p>
+						<p>I'm self-taught as an artist, but studied AI and anthropology (it's been a bit of a detour). Great amounts of affection go to tech, food, learning languages, gaming, and fashion, and these all fuse in my ambition to create things that are beautiful to look at in new and interesting ways.</p>
 						<br>
-						<p>If you’re interested in hiring me for commercial or personal work -- big or small, it doesn’t matter -- I’d love to hear from you. You can find me on one of the websites below, or send a message to info@liea.nl.</p>
-						<br>
-						<p>Clients: <b>  Hasbro Studios  •  VPRO  •  Citizenhub  •  Noio  •  FreeToPlay</b></p>
+						<p> I work 100% digitally using an Intuos 4 Wacom tablet, Photoshop CS5, and Easy Paint Tool SAI.</p>
+						<div class="clients">
+							<p>Clients: <b>  Hasbro Studios  •  VPRO  •  Citizenhub  •  Noio  •  FreeToPlay</b></p>
+						</div>
 					</div>
 					
 					<div class="aboutImg">
@@ -127,9 +130,10 @@
 						</div>
 						
 						<div class="description">
-							<p>I frequently post to other places on the web for art rambles (<b>deviantArt</b>), sketches (<b>tumblr</b>), contests (<b>facebook</b>), meeting cool new (art) people (<b>twitter</b>), selling prints of my original work (<b>society6</b>), as well as licensed merchandise, e.g. My Little Pony, Dota2, and Bravest Warriors (<b>WeLoveFine</b>).</p>
-							<br>
-							<p>Come say hi~</p>
+							<p>If you’re interested in hiring me for commercial or personal work -- big or small, it doesn’t matter -- I’d love to hear from you. You can find me on one of the websites to the side, or email me at the address below.</p>
+							<div class="email">
+								<span style="background-color: #000000">info@liea.nl</span><span id="typed-cursor" class="blinking">|</span>
+							</div>
 						</div>
 					</div>
 			</div>
@@ -159,14 +163,25 @@
 			
 			
 	        $( '.gallery-1 a' ).imageLightbox({
-				onLoadStart:	function() { activityIndicatorOn(); },
+				onLoadStart:	function() { activityIndicatorOn();  },
 				onLoadEnd:		function() { activityIndicatorOff(); },
 				onEnd:	 		function() { activityIndicatorOff(); }
 			});
-	        $( '.gallery-2 a' ).imageLightbox();
-	        $( '.gallery-3 a' ).imageLightbox();
-	    });
+	        $( '.gallery-2 a' ).imageLightbox({
+				onLoadStart:	function() { activityIndicatorOn();  },
+				onLoadEnd:		function() { activityIndicatorOff(); },
+				onEnd:	 		function() { activityIndicatorOff(); }
+			});
+	        $( '.gallery-3 a' ).imageLightbox({
+				onLoadStart:	function() { activityIndicatorOn();  },
+				onLoadEnd:		function() { activityIndicatorOff(); },
+				onEnd:	 		function() { activityIndicatorOff(); }
+			});
+	    
+		});
+		
 	</script>
+
 
 		
 </body>
