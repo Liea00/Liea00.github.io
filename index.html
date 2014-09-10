@@ -23,7 +23,7 @@
 			<li><a href="#works">WORKS</a></li>
 			<li><a href="#about">ABOUT</a></li>
 			<li><a href="#connect">CONNECT</a></li>
-			<li><a href="http://society6.com/liea">SHOP</a></li>
+			<li><a href="http://society6.com/liea" target="_blank">SHOP</a></li>
 		</ul></nav>
 	</header>
 	
@@ -53,12 +53,12 @@
 									<a href="img/gallery1_7.png"></a>
 									<a href="img/gallery1_8.png"></a>
 									<a href="img/gallery1_9.png"></a>
-									<a href="img/gallery1_10.png"></a>
 								</div>
 							</div>
 						</content>
-						<h5><a href="#home">a up</a></h5>
 					</div>
+					<h5><a href="#home">a up</a></h5>
+					<br>
 				
 					<div class="gallery gallery-2">
 						<h3>Character Design</h3>
@@ -76,8 +76,9 @@
 								</div>
 							</div>
 						</content>
-						<h5><a href="#home">a up</a></h5>
 					</div>
+					<h5><a href="#home">a up</a></h5>
+					<br>
 				
 					<div class="gallery gallery-3">
 						<h3>Commercial / Identity</h3>
@@ -94,9 +95,10 @@
 								</div>
 							</div>
 						</content>
-						<h5><a href="#home">a up</a></h5>
 					</div>
-				</div>				
+				</div>
+				<h5><a href="#home">a up</a></h5>
+								
 			</div>
 			
 			<div class="about">
@@ -122,10 +124,11 @@
 					</div>
 				</div>
 			</div>
+						
+			<div class="clearfix"></div>
 			
 			<h5><a href="#home">a up</a></h5>
 			
-			<div class="clearfix"></div>
 			
 			<div class="connect">
 				<header>
@@ -152,8 +155,9 @@
 						</div>
 					</div>
 			</div>
-			<h5><a href="#home">a up</a></h5>
 		</div>
+		<h5><a href="#home">a up</a></h5>
+		
 	</div>
 	<br><br><br>
 	<hr>
@@ -175,25 +179,77 @@
 					{
 						$( '#imagelightbox-loading' ).remove();
 					}
+					
 			
 			
-	        $( '.gallery-1 a' ).imageLightbox({
-				onLoadStart:	function() { activityIndicatorOn();  },
-				onLoadEnd:		function() { activityIndicatorOff(); },
-				onEnd:	 		function() { activityIndicatorOff(); }
-			});
-	        $( '.gallery-2 a' ).imageLightbox({
-				onLoadStart:	function() { activityIndicatorOn();  },
-				onLoadEnd:		function() { activityIndicatorOff(); },
-				onEnd:	 		function() { activityIndicatorOff(); }
-			});
-	        $( '.gallery-3 a' ).imageLightbox({
-				onLoadStart:	function() { activityIndicatorOn();  },
-				onLoadEnd:		function() { activityIndicatorOff(); },
-				onEnd:	 		function() { activityIndicatorOff(); }
-			});
-	    
-		});	
+			navigationOn = function( instance, selector )
+			{
+				var images = $( selector );
+				if( images.length )
+				{
+					var nav = $( '<div id="imagelightbox-nav"></div>' );
+					for( var i = 0; i < images.length; i++ )
+						nav.append( '<button type="button"></button>' );
+
+					nav.appendTo( 'body' );
+					nav.on( 'click touchend', function(){ return false; });
+
+					var navItems = nav.find( 'button' );
+					navItems.on( 'click touchend', function()
+					{
+						var $this = $( this );
+						if( images.eq( $this.index() ).attr( 'href' ) != $( '#imagelightbox' ).attr( 'src' ) )
+							instance.switchImageLightbox( $this.index() );
+
+						navItems.removeClass( 'active' );
+						navItems.eq( $this.index() ).addClass( 'active' );
+
+						return false;
+					})
+					.on( 'touchend', function(){ return false; });
+				}
+			},
+			navigationUpdate = function( selector )
+			{
+				var items = $( '#imagelightbox-nav button' );
+				items.removeClass( 'active' );
+				items.eq( $( selector ).filter( '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ).index( selector ) ).addClass( 'active' );
+			},
+			navigationOff = function()
+			{
+				$( '#imagelightbox-nav' ).remove();
+			}	    
+		
+		
+		var selectorA = '.gallery-1 a';
+		var instanceA = $( selectorA ).imageLightbox(
+		{
+			onStart:	 function() { navigationOn( instanceA, selectorA ); },
+			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onLoadStart: function() { activityIndicatorOn(); },
+			onLoadEnd:	 function() { navigationUpdate( selectorA ); activityIndicatorOff(); }
+		});
+		
+		var selectorB = '.gallery-2 a';
+		var instanceB = $( selectorB ).imageLightbox(
+		{
+			onStart:	 function() { navigationOn( instanceB, selectorB ); },
+			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onLoadStart: function() { activityIndicatorOn(); },
+			onLoadEnd:	 function() { navigationUpdate( selectorB ); activityIndicatorOff(); }
+		});
+		
+		var selectorC = '.gallery-3 a';
+		var instanceC = $( selectorC ).imageLightbox(
+		{
+			onStart:	 function() { navigationOn( instanceC, selectorC ); },
+			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onLoadStart: function() { activityIndicatorOn(); },
+			onLoadEnd:	 function() { navigationUpdate( selectorC ); activityIndicatorOff(); }
+		});
+		
+	});
+		
 	</script>
 	
 	<script>
