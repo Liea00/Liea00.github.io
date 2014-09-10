@@ -55,6 +55,32 @@ h5 {
 	color: #222222;
 }
 
+/* preloaders */
+
+div#da {
+	background: url(img/logo_da_c.png) no-repeat -9999px -9999px;
+}
+
+div#tu {
+	background: url(img/logo_tu_c.png) no-repeat -9999px -9999px;
+}
+
+div#fb {
+	background: url(img/logo_fb_c.png) no-repeat -9999px -9999px;
+}
+
+div#tw {
+	background: url(img/logo_tw_c.png) no-repeat -9999px -9999px;
+}
+
+div#s6 {
+	background: url(img/logo_s6_c.png) no-repeat -9999px -9999px;
+}
+
+div#wl {
+	background: url(img/logo_wl_c.png) no-repeat -9999px -9999px;
+}
+
 /* header & navigation */
 
 .mainHeader img {
@@ -152,6 +178,10 @@ hr {
 	display: inline-block;
 	width: 32.72%;
 	height: auto;
+}
+
+.hiddenImg {
+	display: none;
 }
 
 /* about */
