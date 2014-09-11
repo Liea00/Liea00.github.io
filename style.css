@@ -320,6 +320,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_da.png') center top no-repeat;
+	background-size: cover;
 }
 
 .deviantart:hover {
@@ -332,6 +333,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_tu.png') center top no-repeat;
+	background-size: cover;
 }
 
 .tumblr:hover {
@@ -344,6 +346,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_fb.png') center top no-repeat;
+	background-size: cover;
 }
 
 .facebook:hover {
@@ -356,6 +359,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_tw.png') center top no-repeat;
+	background-size: cover;
 }
 
 .twitter:hover {
@@ -368,6 +372,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_s6.png') center top no-repeat;
+	background-size: cover;
 }
 
 .society6:hover {
@@ -380,6 +385,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_wl.png') center top no-repeat;
+	background-size: cover;
 }
 
 .welovefine:hover {
