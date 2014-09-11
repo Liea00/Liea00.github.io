@@ -197,7 +197,7 @@ hr {
 
 .thumbGallery li {
 	display: inline;
-	padding-right: 0.92%;
+	padding-right: 0.8%;
 }
 
 .thumbGallery ul li:last-child {
@@ -206,7 +206,7 @@ hr {
 
 .thumbGallery ul li img {
 	display: inline-block;
-	width: 32.72%;
+	width: 32.8%;
 	height: auto;
 }
 
@@ -229,13 +229,14 @@ hr {
 
 .aboutText {
 	display: inline;
-    width: 65%;
+    width: 64%;
 	height: auto;
 	float: left;
 }
 
 .clients {
 	position: absolute;
+	width: 64%;
 	bottom: 0;
 }
 
@@ -244,16 +245,17 @@ hr {
 	padding: 0;
 }
 
+.aboutText p b {
+	font-size: 110%;
+}
+
 .aboutImg {
-	display: inline;
-	display: block;
+	display: inline-block;
+	width: 32%;
 	float: right;
 	margin: 0;
 }
 
-.aboutImg img {
-	min-width: 200px
-}
 
 /* connect */
 
@@ -274,23 +276,21 @@ hr {
 
 .links {
 	display: inline;
-    width: 35%;
+    width: 40%;
 	height: auto;
 	float: left;
+	overflow: hidden;
 }
 
 .description {
 	display: inline;
-	width: 58%;
+	width: 56%;
 	padding: 0;
 	float: right;
 }
 
-.description p b {
-	font-size: 120%;
-}
-.clearfix {
-	clear: both;
+.connect li a {
+	margin-right: 5px;
 }
 
 .connect ul {
@@ -299,13 +299,14 @@ hr {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .connect li {
 	display: inline;
 	float: left;
 	width: 32%;
-	padding: 6% 0;
+	padding: 7% 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
@@ -321,6 +322,7 @@ hr {
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_da.png') center top no-repeat;
+	margin-right: 5px;
 }
 
 .deviantart:hover {
