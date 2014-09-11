@@ -158,6 +158,7 @@ a[ id= "connect" ]:target ~ #main article.panel {
 }
 
 hr {
+		width: 100%;
 	    border: 0;
 	    height: 0;
 	    border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -180,6 +181,7 @@ hr {
 }
 
 .galleryContainer h3 {
+	width: 100%;
 	text-align: right;
 	color: #222222;
 }
@@ -599,7 +601,7 @@ hr {
 
 @media only screen and (max-width: 750px), only screen and (max-width: 750px){
 	.body {
-		width: 88%;
+		width: 90%;
 		
 	}
 	
