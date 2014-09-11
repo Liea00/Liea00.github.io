@@ -4,6 +4,8 @@
 <head>
 	<title>Liea.nl</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width"/>
+	
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="imagelightbox.css" type="txt/css" />
@@ -111,16 +113,16 @@
 					<div class="aboutText">
 						<p>Hello, I’m Mei-Li Nieuwland / Liea [ li:’a ], currently doing freelance illustration and concept art from a small apartment-turned-studio in Amsterdam.</p>
 						<br>
-						<p>I'm self-taught as an artist, but studied AI and anthropology (it's been a bit of a detour). Great amounts of affection go to tech, food, learning languages, gaming, and fashion, and these all fuse in my ambition to create things that are beautiful to look at in new and interesting ways.</p>
+						<p>As an artist I'm self-taught, but I went to school for AI and anthropology — it's been a bit of a detour. Copious amounts of love go to science &amp; tech, food, learning languages, games, and fashion, and these all fuse in my ambition to create things that are beautiful to look at in new and interesting ways.</p>
 						<br>
 						<p> I work 100% digitally using an Intuos 4 Wacom tablet, Photoshop CS5, and Easy Paint Tool SAI.</p>
 						<div class="clients">
-							<p><b>Clients: Hasbro Studios • VPRO • Citizenhub • Noio • FreeToPlay</b></p>
+							<p><b>Clients: Hasbro • VPRO • Citizenhub • Noio • FreeToPlay</b></p>
 						</div>
 					</div>
 					
 					<div class="aboutImg">
-						<img src="img/about_photo.jpg" />
+						<img src="img/about_photo.jpg" align="right"/>
 					</div>
 				</div>
 			</div>
@@ -148,7 +150,7 @@
 						</div>
 						
 						<div class="description">
-							<p>If you’re interested in hiring me for commercial or personal work -- big or small, it doesn’t matter -- I’d love to hear from you. You can find me on one of the websites to the side, or email me at the address below.</p>
+							<p>If you’re interested in hiring me for commercial or personal work — big or small, it doesn’t matter — I’d love to hear from you. You can find me on any of the websites on the left, or just send me an email at the address below.</p>
 							<div class="email">
 								<span style="background-color: #000000">info@liea.nl</span><span id="typed-cursor" class="blinking">|</span>
 							</div>
@@ -218,7 +220,18 @@
 			navigationOff = function()
 			{
 				$( '#imagelightbox-nav' ).remove();
-			}	    
+			}	   
+			
+			captionOn = function()
+			{
+				var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
+				if( description.length > 0 )
+					$( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+			},
+			captionOff = function()
+			{
+				$( '#imagelightbox-caption' ).remove();
+			} 
 		
 		
 		var selectorA = '.gallery-1 a';

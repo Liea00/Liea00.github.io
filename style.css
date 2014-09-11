@@ -202,6 +202,7 @@ hr {
 
 .thumbGallery ul li:last-child {
 	padding-right: 0;
+	margin-right: 0;
 }
 
 .thumbGallery ul li img {
@@ -229,14 +230,15 @@ hr {
 
 .aboutText {
 	display: inline;
-    width: 64%;
+    width: 60%;
 	height: auto;
 	float: left;
+	padding-right: 10px;
 }
 
 .clients {
 	position: absolute;
-	width: 64%;
+	width: 60%;
 	bottom: 0;
 }
 
@@ -250,10 +252,11 @@ hr {
 }
 
 .aboutImg {
-	display: inline-block;
-	width: 32%;
+	display: inline;
+	width: 30%;
 	float: right;
 	margin: 0;
+	right: 0;
 }
 
 
@@ -276,7 +279,7 @@ hr {
 
 .links {
 	display: inline;
-    width: 40%;
+    width: 42%;
 	height: auto;
 	float: left;
 	overflow: hidden;
@@ -284,7 +287,7 @@ hr {
 
 .description {
 	display: inline;
-	width: 56%;
+	width: 54%;
 	padding: 0;
 	float: right;
 }
@@ -311,18 +314,12 @@ hr {
 	padding-bottom: 0;
 }
 
-.connect img {
-	display: inline;
-	width: 32%;
-}
-
 .deviantart {
 	margin-bottom: 10px;
 	width: 100px;
 	height:100px;
 	display:block;
  	background:transparent url('img/logo_da.png') center top no-repeat;
-	margin-right: 5px;
 }
 
 .deviantart:hover {
@@ -395,11 +392,11 @@ hr {
 	color: #ffffff;
 	position: absolute;
 	bottom: 0;
-	padding-bottom: 17px;
+	padding-bottom: 15px;
 }
 
 	#typed-cursor {
-	  font-weight: 100;
+	font-weight: 100;
     font-size: 30px;
     color: black;
 	}
@@ -418,7 +415,7 @@ hr {
 #typed-cursor {
 	color: #2E3D48;
 	font-weight: 100;
-	font-size: 128%;
+	font-size: 139%;
 }
 
 #typed-cursor.blinking {
@@ -507,273 +504,172 @@ hr {
 	-webkit-box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 ); /* 40 */
 	box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 ); /* 40 */
 }
-	#imagelightbox-loading div
-	{
-		width: 20px; /* 20 */
-		height: 20px; /* 20 */
-		background-color: #fff;
 
-		-webkit-animation: imagelightbox-loading .5s ease infinite;
-		animation: imagelightbox-loading .5s ease infinite;
-	}
+#imagelightbox-loading div
+{
+	width: 20px; /* 20 */
+	height: 20px; /* 20 */
+	background-color: #fff;
 
-	@-webkit-keyframes imagelightbox-loading
-	{
-		from { opacity: .5;	-webkit-transform: scale( .75 ); }
-		50%	 { opacity: 1;	-webkit-transform: scale( 1 ); }
-		to	 { opacity: .5;	-webkit-transform: scale( .75 ); }
-	}
-	@keyframes imagelightbox-loading
-	{
-		from { opacity: .5;	transform: scale( .75 ); }
-		50%	 { opacity: 1;	transform: scale( 1 ); }
-		to	 { opacity: .5;	transform: scale( .75 ); }
-	}
+	-webkit-animation: imagelightbox-loading .5s ease infinite;
+	animation: imagelightbox-loading .5s ease infinite;
+}
+
+@-webkit-keyframes imagelightbox-loading
+{
+	from { opacity: .5;	-webkit-transform: scale( .75 ); }
+	50%	 { opacity: 1;	-webkit-transform: scale( 1 ); }
+	to	 { opacity: .5;	-webkit-transform: scale( .75 ); }
+}
+@keyframes imagelightbox-loading
+{
+	from { opacity: .5;	transform: scale( .75 ); }
+	50%	 { opacity: 1;	transform: scale( 1 ); }
+	to	 { opacity: .5;	transform: scale( .75 ); }
+}
 	
 
 /* NAVIGATION */
 	
-	#imagelightbox-nav
-	{
-		background-color: #444;
-		background-color: rgba( 0, 0, 0, .5 );
-		border-radius: 20px;
-		position: fixed;
-		z-index: 10001;
-		left: 50%;
-		bottom: 60px; /* 60 3.75em */
-		padding: 5px; /* 5 0.313em*/
+#imagelightbox-nav
+{
+	background-color: #444;
+	background-color: rgba( 0, 0, 0, .4 );
+	border-radius: 20px;
+	position: fixed;
+	z-index: 10001;
+	left: 50%;
+	bottom: 40px; /* 60 3.75em */
+	padding: 3px; /* 5 0.313em*/
+	padding-bottom: 4px;
 
-		-webkit-transform: translateX( -50% );
-		-ms-transform: translateX( -50% );
-		transform: translateX( -50% );
-	}
-		#imagelightbox-nav button
-		{
-			width: 20px; /* 20 1em*/
-			height: 20px; /* 20 1em*/
-			background-color: transparent;
-			border: 1px solid #fff;
-			border-radius: 50%;
-			display: inline-block;
-			margin: 0 5px; /* 5 0.0313em*/
-		}
-		#imagelightbox-nav button.active
-		{
-			background-color: #fff;
-		}
+	-webkit-transform: translateX( -50% );
+	-ms-transform: translateX( -50% );
+	transform: translateX( -50% );
+}
+
+#imagelightbox-nav button
+{
+	width: 15px; /* 20 1em*/
+	height: 15px; /* 20 1em*/
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 5px; /* 5 0.0313em*/
+}
+#imagelightbox-nav button.active
+{
+	background-color: #fff;
+}
+
+/* CAPTION
+
+#imagelightbox-caption
+{
+	text-align: center;
+	color: #fff;
+	border-radius: 20px;
+	background-color: #444;
+	background-color: rgba( 0, 0, 0, .8 );
+	position: fixed;
+	z-index: 10001;
+	left: 39%;
+	bottom: -10px;
+	padding: 5px; /* 10 0.625em */
+}
+
+
 	
-	
-/* JAVASCRIPT RESOURCES */
+/* SMALL SCREENS */
 		
-	$( function()
-	{
-			// ACTIVITY INDICATOR
+@media screen and (min-width:1101px){
+   
+}
 
-		var activityIndicatorOn = function()
-			{
-				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
-			},
-			activityIndicatorOff = function()
-			{
-				$( '#imagelightbox-loading' ).remove();
-			},
+@media screen and (max-width:1100px){
+    .body { 
+		   width: 88%;
+    }
 
+}
 
-			// OVERLAY
-
-			overlayOn = function()
-			{
-				$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
-			},
-			overlayOff = function()
-			{
-				$( '#imagelightbox-overlay' ).remove();
-			},
+/* MOBILE */
 
 
-			// CLOSE BUTTON
+@media screen and (max-width: 750px){
+	.body {
+		width: 88%;
+		
+	}
+	
+	.mainHeader nav ul {
+		font-size: 130%;
+	}
+	
+	.mainHeader nav ul a:link {
+		padding: 5px 20px;
+	}
+		
+	.about {
+		float: none;
+	}
 
-			closeButtonOn = function( instance )
-			{
-				$( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
-			},
-			closeButtonOff = function()
-			{
-				$( '#imagelightbox-close' ).remove();
-			},
+	.aboutText {
+	    width: 100%;
+		height: auto;
+		float: left;
+		padding-right: 10px;
+	}
 
+	.clients {
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
 
-			// CAPTION
+	.aboutImg {
+		display: none;
+	}
 
-			captionOn = function()
-			{
-				var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
-				if( description.length > 0 )
-					$( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
-			},
-			captionOff = function()
-			{
-				$( '#imagelightbox-caption' ).remove();
-			},
+	.connect {
+		float: none;
+	}
 
+	.connectContainer {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
 
-			// NAVIGATION
+	.links {
+		display: inline-block;
+	    width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+	}
 
-			navigationOn = function( instance, selector )
-			{
-				var images = $( selector );
-				if( images.length )
-				{
-					var nav = $( '<div id="imagelightbox-nav"></div>' );
-					for( var i = 0; i < images.length; i++ )
-						nav.append( '<button type="button"></button>' );
+	.links ul {
+		float: left;
+	}
+	
+	
+	.links ul li {
+		width: 33%;
+	}
+	
+	.description {
+		float: left;
+		display: inline;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.email {
+		position: relative;
+	}
 
-					nav.appendTo( 'body' );
-					nav.on( 'click touchend', function(){ return false; });
+}
 
-					var navItems = nav.find( 'button' );
-					navItems.on( 'click touchend', function()
-					{
-						var $this = $( this );
-						if( images.eq( $this.index() ).attr( 'href' ) != $( '#imagelightbox' ).attr( 'src' ) )
-							instance.switchImageLightbox( $this.index() );
-
-						navItems.removeClass( 'active' );
-						navItems.eq( $this.index() ).addClass( 'active' );
-
-						return false;
-					})
-					.on( 'touchend', function(){ return false; });
-				}
-			},
-			navigationUpdate = function( selector )
-			{
-				var items = $( '#imagelightbox-nav button' );
-				items.removeClass( 'active' );
-				items.eq( $( selector ).filter( '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ).index( selector ) ).addClass( 'active' );
-			},
-			navigationOff = function()
-			{
-				$( '#imagelightbox-nav' ).remove();
-			},
-
-
-			// ARROWS
-
-			arrowsOn = function( instance, selector )
-			{
-				var $arrows = $( '<button type="button" class="imagelightbox-arrow imagelightbox-arrow-left"></button><button type="button" class="imagelightbox-arrow imagelightbox-arrow-right"></button>' );
-
-				$arrows.appendTo( 'body' );
-
-				$arrows.on( 'click touchend', function( e )
-				{
-					e.preventDefault();
-
-					var $this	= $( this ),
-						$target	= $( selector + '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ),
-						index	= $target.index( selector );
-
-					if( $this.hasClass( 'imagelightbox-arrow-left' ) )
-					{
-						index = index - 1;
-						if( !$( selector ).eq( index ).length )
-							index = $( selector ).length;
-					}
-					else
-					{
-						index = index + 1;
-						if( !$( selector ).eq( index ).length )
-							index = 0;
-					}
-
-					instance.switchImageLightbox( index );
-					return false;
-				});
-			},
-			arrowsOff = function()
-			{
-				$( '.imagelightbox-arrow' ).remove();
-			};
-
-
-		//	WITH ACTIVITY INDICATION
-
-		$( 'a[data-imagelightbox="a"]' ).imageLightbox(
-		{
-			onLoadStart:	function() { activityIndicatorOn(); },
-			onLoadEnd:		function() { activityIndicatorOff(); },
-			onEnd:	 		function() { activityIndicatorOff(); }
-		});
-
-
-		//	WITH OVERLAY & ACTIVITY INDICATION
-
-		$( 'a[data-imagelightbox="b"]' ).imageLightbox(
-		{
-			onStart: 	 function() { overlayOn(); },
-			onEnd:	 	 function() { overlayOff(); activityIndicatorOff(); },
-			onLoadStart: function() { activityIndicatorOn(); },
-			onLoadEnd:	 function() { activityIndicatorOff(); }
-		});
-
-
-		//	WITH "CLOSE" BUTTON & ACTIVITY INDICATION
-
-		var instanceC = $( 'a[data-imagelightbox="c"]' ).imageLightbox(
-		{
-			quitOnDocClick:	false,
-			onStart:		function() { closeButtonOn( instanceC ); },
-			onEnd:			function() { closeButtonOff(); activityIndicatorOff(); },
-			onLoadStart: 	function() { activityIndicatorOn(); },
-			onLoadEnd:	 	function() { activityIndicatorOff(); }
-		});
-
-
-		//	WITH CAPTION & ACTIVITY INDICATION
-
-		$( 'a[data-imagelightbox="d"]' ).imageLightbox(
-		{
-			onLoadStart: function() { captionOff(); activityIndicatorOn(); },
-			onLoadEnd:	 function() { captionOn(); activityIndicatorOff(); },
-			onEnd:		 function() { captionOff(); activityIndicatorOff(); }
-		});
-
-
-		//	WITH ARROWS & ACTIVITY INDICATION
-
-		var selectorG = 'a[data-imagelightbox="g"]';
-		var instanceG = $( selectorG ).imageLightbox(
-		{
-			onStart:		function(){ arrowsOn( instanceG, selectorG ); },
-			onEnd:			function(){ arrowsOff(); activityIndicatorOff(); },
-			onLoadStart: 	function(){ activityIndicatorOn(); },
-			onLoadEnd:	 	function(){ $( '.imagelightbox-arrow' ).css( 'display', 'block' ); activityIndicatorOff(); }
-		});
-
-
-		//	WITH NAVIGATION & ACTIVITY INDICATION
-
-		var selectorE = 'a[data-imagelightbox="e"]';
-		var instanceE = $( selectorE ).imageLightbox(
-		{
-			onStart:	 function() { navigationOn( instanceE, selectorE ); },
-			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
-			onLoadStart: function() { activityIndicatorOn(); },
-			onLoadEnd:	 function() { navigationUpdate( selectorE ); activityIndicatorOff(); }
-		});
-
-
-		//	ALL COMBINED
-
-		var selectorF = 'a[data-imagelightbox="f"]';
-		var instanceF = $( selectorF ).imageLightbox(
-		{
-			onStart:		function() { overlayOn(); closeButtonOn( instanceF ); arrowsOn( instanceF, selectorF ); },
-			onEnd:			function() { overlayOff(); captionOff(); closeButtonOff(); arrowsOff(); activityIndicatorOff(); },
-			onLoadStart: 	function() { captionOff(); activityIndicatorOn(); },
-			onLoadEnd:	 	function() { captionOn(); activityIndicatorOff(); $( '.imagelightbox-arrow' ).css( 'display', 'block' ); }
-		});
-
-	});
