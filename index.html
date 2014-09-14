@@ -182,19 +182,22 @@
 	<script src="jquery.js"></script>
 	<script src="imagelightbox.js"></script>
 	<script>
-	    $( function()
-		{
-			var activityIndicatorOn = function()
-					{
-						$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
-					}
-					
-			var activityIndicatorOff = function()
-					{
-						$( '#imagelightbox-loading' ).remove();
-					}
-					
+	
+			<!-- LOADER -->
 			
+		    $( function()
+			{
+				var activityIndicatorOn = function()
+						{
+							$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+						}
+					
+				var activityIndicatorOff = function()
+						{
+							$( '#imagelightbox-loading' ).remove();
+						}
+					
+			<!-- NAVIGATION -->
 			
 			navigationOn = function( instance, selector )
 			{
@@ -233,24 +236,26 @@
 			{
 				$( '#imagelightbox-nav' ).remove();
 			}	   
-			
-			captionOn = function()
+		
+			<!-- OVERLAY -->
+
+			overlayOn = function()
 			{
-				var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
-				if( description.length > 0 )
-					$( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+				$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
 			},
-			captionOff = function()
+			overlayOff = function()
 			{
-				$( '#imagelightbox-caption' ).remove();
-			} 
+				$( '#imagelightbox-overlay' ).remove();
+			}
+			
+		<!-- ACTIVATE -->
 		
 		
 		var selectorA = '.gallery-1 a';
 		var instanceA = $( selectorA ).imageLightbox(
 		{
-			onStart:	 function() { navigationOn( instanceA, selectorA ); },
-			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onStart:	 function() { overlayOn(); navigationOn( instanceA, selectorA ); },
+			onEnd:		 function() { overlayOff(); navigationOff(); activityIndicatorOff(); },
 			onLoadStart: function() { activityIndicatorOn(); },
 			onLoadEnd:	 function() { navigationUpdate( selectorA ); activityIndicatorOff(); }
 		});
@@ -258,8 +263,8 @@
 		var selectorB = '.gallery-2 a';
 		var instanceB = $( selectorB ).imageLightbox(
 		{
-			onStart:	 function() { navigationOn( instanceB, selectorB ); },
-			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onStart:	 function() { overlayOn(); navigationOn( instanceB, selectorB ); },
+			onEnd:		 function() { overlayOff(); navigationOff(); activityIndicatorOff(); },
 			onLoadStart: function() { activityIndicatorOn(); },
 			onLoadEnd:	 function() { navigationUpdate( selectorB ); activityIndicatorOff(); }
 		});
@@ -267,13 +272,26 @@
 		var selectorC = '.gallery-3 a';
 		var instanceC = $( selectorC ).imageLightbox(
 		{
-			onStart:	 function() { navigationOn( instanceC, selectorC ); },
-			onEnd:		 function() { navigationOff(); activityIndicatorOff(); },
+			onStart:	 function() { overlayOn(); navigationOn( instanceC, selectorC ); },
+			onEnd:		 function() { overlayOff(); navigationOff(); activityIndicatorOff(); },
 			onLoadStart: function() { activityIndicatorOn(); },
 			onLoadEnd:	 function() { navigationUpdate( selectorC ); activityIndicatorOff(); }
 		});
 		
 	});
+	
+	00000000
+	//	WITH OVERLAY & ACTIVITY INDICATION
+
+	$( 'a[data-imagelightbox="b"]' ).imageLightbox(
+	{
+		onStart: 	 function() { overlayOn(); },
+		onEnd:	 	 function() { overlayOff(); activityIndicatorOff(); },
+		onLoadStart: function() { activityIndicatorOn(); },
+		onLoadEnd:	 function() { activityIndicatorOff(); }
+	});
+	
+	00000000
 		
 	</script>
 	

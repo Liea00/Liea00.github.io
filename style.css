@@ -568,6 +568,20 @@ hr {
 	background-color: #fff;
 }
 
+/* OVERLAY */
+
+#imagelightbox-overlay
+{
+	background-color: #444;
+	background-color: rgba( 0, 0, 0, .6 );
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 /* CAPTION
 
 #imagelightbox-caption
