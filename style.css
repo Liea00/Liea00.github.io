@@ -244,7 +244,7 @@ hr {
 
 .aboutText p {
 	margin: 0;
-	padding: 0;
+	padding-right: 20px;
 }
 
 .aboutText p b {
@@ -256,7 +256,11 @@ hr {
 	width: 32%;
 	float: right;
 	margin: 0;
-	overflow: hidden;
+}
+
+.aboutImg img {
+	max-width: 100% auto;
+	width: 250px;
 }
 
 
@@ -294,6 +298,9 @@ hr {
 
 .connect li a {
 	margin-right: 5px;
+	max-width: 100px;
+	
+	
 }
 
 .connect ul {
@@ -316,11 +323,10 @@ hr {
 
 .deviantart {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_da.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_da.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .deviantart:hover {
@@ -329,11 +335,10 @@ hr {
 
 .tumblr {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_tu.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_tu.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .tumblr:hover {
@@ -342,11 +347,10 @@ hr {
 
 .facebook {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_fb.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_fb.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .facebook:hover {
@@ -355,11 +359,10 @@ hr {
 
 .twitter {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_tw.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_tw.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .twitter:hover {
@@ -368,11 +371,10 @@ hr {
 
 .society6 {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_s6.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_s6.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .society6:hover {
@@ -381,11 +383,10 @@ hr {
 
 .welovefine {
 	margin-bottom: 10px;
-	width: 100px;
 	height:100px;
 	display:block;
- 	background:transparent url('img/logo_wl.png') center top no-repeat;
-	background-size: cover;
+ 	background: url('img/logo_wl.png') no-repeat;
+	background-size: 100% auto;
 }
 
 .welovefine:hover {
