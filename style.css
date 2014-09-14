@@ -299,8 +299,6 @@ hr {
 .connect li a {
 	margin-right: 5px;
 	max-width: 100px;
-	
-	
 }
 
 .connect ul {
@@ -604,7 +602,7 @@ hr {
 /* MOBILE */
 
 
-@media only screen and (max-width: 750px), only screen and (max-width: 750){
+@media only screen and (max-width: 750px), only screen and (max-width: 750px){
 	.body {
 		max-width: 100% !important;
 		
@@ -640,16 +638,6 @@ hr {
 		display: none;
 	}
 
-	.connect {
-		float: none;
-	}
-
-	.connectContainer {
-		display: block;
-		width: 100%;
-		padding: 0;
-	}
-
 	.links {
 		display: inline-block;
 	    width: 100%;
@@ -657,26 +645,28 @@ hr {
 		margin-right: auto;
 		overflow: hidden;
 	}
-
-	.links ul {
-		float: left;
-	}
 	
-	
-	.links ul li {
-		width: 33%;
+	.connect li a {
+		margin-right: 5px;
+		max-width: 100px;
 	}
 	
 	.description {
-		float: left;
-		display: inline;
 		width: 100%;
-		padding: 0;
 	}
 	
 	.email {
+		width: 100%;
+		font-size: 250%;
 		position: relative;
 	}
+	
+}
 
+@media only screen and (max-width: 380px), only screen and (max-width: 380px){
+	
+	.email {
+		font-size: 190%;
+	}
 }
 
