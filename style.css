@@ -58,27 +58,27 @@ h5 {
 
 /* preloaders */
 
-div#da {
+.deviantart .preload {
 	background: url(img/logo_da_c.png) no-repeat -9999px -9999px;
 }
 
-div#tu {
+.tumblr .preload {
 	background: url(img/logo_tu_c.png) no-repeat -9999px -9999px;
 }
 
-div#fb {
+.facebook .preload {
 	background: url(img/logo_fb_c.png) no-repeat -9999px -9999px;
 }
 
-div#tw {
+.twitter .preload {
 	background: url(img/logo_tw_c.png) no-repeat -9999px -9999px;
 }
 
-div#s6 {
+.society6 .preload {
 	background: url(img/logo_s6_c.png) no-repeat -9999px -9999px;
 }
 
-div#wl {
+.welovefine .preload {
 	background: url(img/logo_wl_c.png) no-repeat -9999px -9999px;
 }
 
