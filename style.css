@@ -58,8 +58,8 @@ h5 {
 
 /* preloaders */
 
-.deviantart .preload {
-	background: url(img/logo_da_c.png) no-repeat -9999px -9999px;
+.behance .preload {
+	background: url(img/logo_bh_c.png) no-repeat -9999px -9999px;
 }
 
 .tumblr .preload {
@@ -319,16 +319,16 @@ hr {
 	padding-bottom: 0;
 }
 
-.deviantart {
+.behance {
 	margin-bottom: 10px;
 	height:100px;
 	display:block;
- 	background: url('img/logo_da.png') no-repeat;
+ 	background: url('img/logo_bh.png') no-repeat;
 	background-size: 100% auto;
 }
 
-.deviantart:hover {
-   background-image: url('img/logo_da_c.png');
+.behance:hover {
+   background-image: url('img/logo_bh_c.png');
 }
 
 .tumblr {
