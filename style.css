@@ -263,6 +263,11 @@ hr {
 	width: 250px;
 }
 
+/* Agenda */
+
+.agendaGrey {
+	color: #BEBEBE;
+}
 
 /* connect */
 
@@ -379,7 +384,7 @@ hr {
    background-image: url('img/logo_s6_c.png');
 }
 
-.welovefine {
+/* .welovefine {
 	margin-bottom: 10px;
 	height:100px;
 	display:block;
@@ -389,6 +394,20 @@ hr {
 
 .welovefine:hover {
    background-image: url('img/logo_wl_c.png');
+}
+
+*/
+
+.instagram {
+	margin-bottom: 10px;
+	height:100px;
+	display:block;
+ 	background: url('img/logo_ig.png') no-repeat;
+	background-size: 100% auto;
+}
+
+.instagram:hover {
+   background-image: url('img/logo_ig_c.png');
 }
 
 .email {
