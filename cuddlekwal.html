@@ -54,13 +54,14 @@
 	  crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	var fps = 60;
-	var speed = 30;
+	var basespeed = 30;
 	var clickedTime = 5000;
 	var depressedTime = 10000;
 
 	var tgtX = 100, tgtY = 100;
 	var circle = $('#circle');
 	var depressedTimer;
+	var speed = basespeed;
 
 	$(document).mousemove(function(e) {
 	  tgtX = e.pageX - 35;
@@ -80,12 +81,12 @@
 	  	return;
 	  
 		circle.addClass("clicked").removeClass("depressed");
-	  speed /= 2;
+	  speed = basespeed / 2;
 	  clearInterval(depressedTimer);
 	    
 	  setTimeout(function() {
 			circle.removeClass("clicked");
-	    speed *= 2;
+	    speed = basespeed;
 	    depressedTimer = setTimeout(getDepressed, depressedTime);
 	  }, clickedTime);
 	});
