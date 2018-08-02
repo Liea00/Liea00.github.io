@@ -342,14 +342,14 @@ section {
   position: absolute;
 }
 
-.unfold-functional                  { background-color:    #ddf5e8; }
-.unfold-functional .indicator-arrow { border-bottom-color: #ddf5e8; left: 12.5%; }
-.unfold-editorial                   { background-color:    #f1e1d1; }
-.unfold-editorial  .indicator-arrow { border-bottom-color: #f1e1d1; left: 37.5%; }
-.unfold-graphic                     { background-color:    #d8d4e5; }
-.unfold-graphic    .indicator-arrow { border-bottom-color: #d8d4e5; left: 62.5%; }
-.unfold-art                         { background-color:    #edd2d7; }
-.unfold-art        .indicator-arrow { border-bottom-color: #edd2d7; left: 87.5%; }
+.unfold-functional                  { background-color:    #c8e3d6; }
+.unfold-functional .indicator-arrow { border-bottom-color: #c8e3d6; left: 12.5%; }
+.unfold-editorial                   { background-color:    #efd9c5; }
+.unfold-editorial  .indicator-arrow { border-bottom-color: #efd9c5; left: 37.5%; }
+.unfold-graphic                     { background-color:    #d8d5e0; }
+.unfold-graphic    .indicator-arrow { border-bottom-color: #d8d5e0; left: 62.5%; }
+.unfold-art                         { background-color:    #ecd4d6; }
+.unfold-art        .indicator-arrow { border-bottom-color: #ecd4d6; left: 87.5%; }
 
 /*****/
 
@@ -1157,6 +1157,14 @@ figure figcaption > a {
 		white-space: normal;
 	}
 
+	.inner h1 a:before {
+		display: none;
+	}
+
+	.inner h1 a:hover:before {
+		display: none;
+	}
+
 	.img img {
 		padding-top: 20px;
 		margin-left: 0;
@@ -1225,6 +1233,14 @@ figure figcaption > a {
 	.landing.img-3 {
 		background: linear-gradient(rgba(000,0,0,0.90), rgba(000,0,0,0)), url("/assets/img/bgimage3small.png") no-repeat 50% 0%;
 		background-size: cover;
+	}
+
+	.inner h1 a:before {
+		display: none;
+	}
+
+	.inner h1 a:hover:before {
+		display: none;
 	}
 
 	.contact {
@@ -1480,12 +1496,12 @@ figure figcaption > a {
 	}
 	.indicator-line.functional {
 		border-width: 2px 2px 0 0;
-		border-color: #ddf5e8;
+		border-color: #c8e3d6;
 		right: -11px;
 	}
 	.indicator-line.editorial {
 		border-width: 2px 0 0 2px;
-		border-color: #f1e1d1;
+		border-color: #efd9c5;
 		left: -11px;
 	}
 
@@ -1563,6 +1579,14 @@ figure figcaption > a {
 @media only screen and (max-width: 320px) {
 	.intro h1 {
 		font-size: 1.6em;
+	}
+	
+	.inner h1 a:before {
+		display: none;
+	}
+
+	.inner h1 a:hover:before {
+		display: none;
 	}
 
 	.mainmenu li {
