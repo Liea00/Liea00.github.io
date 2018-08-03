@@ -295,11 +295,6 @@ section {
 	margin-bottom: 48px;
 }
 
-.whatido .col-2 h3 {
-	padding: 8px;
-	margin-right: 15px;
-}
-
 .whatido .col-8 img {
 	margin-top: 10px;
 }
@@ -1189,9 +1184,6 @@ figure figcaption > a {
 	.row-m h4 {
 		margin-top: 5px;
 	}
-	.whatido .col-2 h3 {
-		padding: 0;
-	}
 	.row-m h3 {
 		margin: 0;
 	}
@@ -1317,6 +1309,10 @@ figure figcaption > a {
 
 	.unfold .mouseoverimg .text {
 		width: 80%;
+	}
+
+	.swiper-container {
+		margin-bottom: 22px;
 	}
 
 	.contact .arrowline {
