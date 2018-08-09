@@ -381,6 +381,15 @@ section {
 	padding-top: 12px;
 }
 
+.news a {
+	font-weight: bold;
+	color: #272525;
+}
+
+.news a:hover {
+	color: #888383;
+}
+
 /*news navigation */
 
 
