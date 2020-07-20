@@ -36,6 +36,11 @@
 	padding: 0 10px;
 }
 
+.flushimg img {
+	display: block;
+	padding: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
