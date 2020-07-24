@@ -549,8 +549,7 @@ section {
 	font-size: 280%;
 	color: #ffffff;
     border-right: .1em solid white;
-    width: 10.5em; 
-    width: 14.5ch;
+    width: 8.2em; 
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 1.5s steps(19, end), blink-caret .5s step-end infinite alternate;
