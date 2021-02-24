@@ -260,6 +260,18 @@ section {
 	margin-left: 30px;
 }
 
+.nlr img {
+	max-height: 40%;
+	width: 70%;
+	display: block;
+}
+
+.rijks img {
+	max-height: 40%;
+	width: 55%;
+	display: block;
+}
+
 .whatido {
 	padding-bottom: 10px;
 }
