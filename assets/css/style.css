@@ -185,6 +185,10 @@ section {
 	background: linear-gradient(rgba(000,0,0,0.90), rgba(000,0,0,0)), url("/assets/img/bgimage3.png") no-repeat 50% 0%;
 	background-size: cover;
 }
+.landing.img-4 {
+	background: linear-gradient(rgba(000,0,0,0.90), rgba(000,0,0,0)), url("/assets/img/bgimage4.png") no-repeat 50% 0%;
+	background-size: cover;
+}
 
 .landing .inner {
 	display: table-cell;
@@ -523,6 +527,12 @@ section {
 	background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage3.png") no-repeat 50% 0%;
 	background-size: cover;
 }
+
+.contact.img-4 {
+	background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage4.png") no-repeat 50% 0%;
+	background-size: cover;
+}
+
 
 .intro {
 	margin-bottom: 0;
@@ -1639,6 +1649,10 @@ figure figcaption > a {
 		background: linear-gradient(rgba(000,0,0,0.90), rgba(000,0,0,0)), url("/assets/img/bgimage3xs.png") no-repeat 50% 0%;
 		background-size: cover;
 	}
+	.landing.img-4 {
+		background: linear-gradient(rgba(000,0,0,0.90), rgba(000,0,0,0)), url("/assets/img/bgimage4xs.png") no-repeat 50% 0%;
+		background-size: cover;
+	}
 
 	.contact {
 		background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage1xs.png") no-repeat 50% 0%;
@@ -1652,6 +1666,11 @@ figure figcaption > a {
 
 	.contact.img-3 {
 		background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage3xs.png") no-repeat 50% 0%;
+		background-size: cover;
+	}
+
+	.contact.img-4 {
+		background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage4xs.png") no-repeat 50% 0%;
 		background-size: cover;
 	}
 
