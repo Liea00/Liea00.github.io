@@ -225,6 +225,15 @@ section {
 	white-space: nowrap;
 }
 
+/* pictoright */
+.intro h2 {
+	font-family: 'PT Sans', sans-serif;
+	color: #f8f8f8;
+	font-size: 110%;
+	text-align: left;
+	margin-left: 20px;
+}
+
 /* content */
 
 .content {
@@ -1285,7 +1294,6 @@ figure figcaption > a {
 		background: linear-gradient(rgba(000,0,0,0.30), rgba(000,0,0,0.90)), url("/assets/img/bgimage3small.png") no-repeat 50% 0%;
 		background-size: cover;
 	}
-
 
 	.intro a {
 		white-space: normal;
